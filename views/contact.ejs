@@ -1,0 +1,17 @@
+<%- include( 'partials/header'); -%>
+<h1> <%= titleContent %> </h1>
+<h2>INTERESTED? SEND US A NOTE FOR MORE INFORMATION.</h2>
+<form class="" action="/sendInquiry" method="post">
+  <div class="form-group">
+    <label>Name*</label>
+    <input type="text" class="form-control" name="postName">
+    <label>Email*</label>
+    <input type="text" class="form-control" name="postEmail">
+    <label>Name*</label>
+    <input type="text" class="form-control" name="postPhone">
+    <label>Message*</label>
+    <textarea name="postMessage" class="form-control" cols="30" rows="5"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary" name="buttonInquiry">Send Inquiry</button>
+</form>
+<%- include( 'partials/footer'); -%>
